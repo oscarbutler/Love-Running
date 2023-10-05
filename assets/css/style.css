@@ -48,6 +48,7 @@ main {
     background-color: lightblue;
     /*Gives extra space the color of the main content*/
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /*Footer*/
