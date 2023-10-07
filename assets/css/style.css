@@ -19,6 +19,15 @@ body {
     font-size: small;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+
+}
 
 /*Header*/
 header {
@@ -37,28 +46,46 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
 
 @media screen and(min-width:768px) {}
 
 /*Main Content*/
 main {
-    background-color: lightblue;
+
     /*Gives extra space the color of the main content*/
     flex: 1 0 auto;
     margin-top: 40px;
+}
+
+#cover-text {
+    width: 300px;
+    right: 50px;
 }
 
 /*Hero Section*/
 #hero {
     height: 600px;
     width: 100%;
-    background: url(../images/hero-image.jpg);
+    background: url(../images/hero-image.jpg) no-repeat center center/cover;
+    position: relative;
+}
+
+
+
+
+#cover-text {
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text>h2,
+#cover-text>h3 {
+    color: #ffffff;
 }
 
 /*Footer*/
@@ -116,4 +143,29 @@ nav {
 
 .nav-toggle-lable {
     font-size: 2rem;
+}
+
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+benefits-physical>div benefits-mental>div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
 }
