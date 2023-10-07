@@ -44,9 +44,8 @@ h1 {
     color: #252525;
 }
 
-@media screen and(min-width:768px;){
-    
-}
+@media screen and(min-width:768px) {}
+
 /*Main Content*/
 main {
     background-color: lightblue;
@@ -55,21 +54,26 @@ main {
     margin-top: 40px;
 }
 
-/*Footer*/
-footer {
-    background-color: orange;
+/*Hero Section*/
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url(../images/hero-image.jpg);
 }
-#social-networks{
+
+/*Footer*/
+
+#social-networks {
     text-align: center;
-    padding:20px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
-#social-networks i{
+#social-networks i {
     font-size: 160%;
-    padding:5%;
+    padding: 5%;
     color: #3a3a3a;
 }
 
