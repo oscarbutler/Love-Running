@@ -1,5 +1,5 @@
 /*Google Fonts Import*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
 
 /*Astericks wildcard to override default styles*/
 * {
@@ -15,18 +15,17 @@ body {
     flex-direction: column;
     /*Generic Project Styles*/
     color: #3a3a3a;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: small;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
-
 }
 
 /*Header*/
@@ -46,12 +45,10 @@ header a {
     color: inherit;
 }
 
-
 @media screen and(min-width:768px) {}
 
 /*Main Content*/
 main {
-
     /*Gives extra space the color of the main content*/
     flex: 1 0 auto;
     margin-top: 40px;
@@ -70,11 +67,8 @@ main {
     position: relative;
 }
 
-
-
-
 #cover-text {
-    background-color: rgba(241, 109, 107, .7);
+    background-color: rgba(241, 109, 107, 0.7);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -129,7 +123,6 @@ nav {
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
-
 }
 
 /*Nav toggle*/
@@ -171,7 +164,7 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    background: url("../images/reasons-image.webp") no-repeat top center / cover;
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
@@ -187,8 +180,30 @@ hr {
     justify-content: center;
 }
 
+/*Meetup Times*/
+#times {
+    background: url(../images/dublin-city.webp) no-repeat center/cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    /*Creates a border and in to a grid style*/
+    border: 2px solid white;
+}
+
+#times h3 {
+    color: #fafafa
+}
+
 /*Large devices like laptop and tablet etc*/
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
@@ -210,15 +225,9 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
-
-
 }
 
-
-@media screen and (min-width:1200px) {
-
-
-
+@media screen and (min-width: 1200px) {
     #benefits {
         display: flex;
         flex-direction: row;
@@ -236,7 +245,7 @@ hr {
         order: 1;
     }
 
-    #benefits>div {
+    #benefits-mental>div {
         align-self: flex-start;
     }
 
