@@ -49,7 +49,6 @@ header a {
     color: inherit;
 }
 
-@media screen and(min-width:768px) {}
 
 /*Main Content*/
 main {
@@ -86,6 +85,16 @@ main {
     color: #ffffff;
 }
 
+/*Gallery*/
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
 /*Footer*/
 
 #social-networks {
@@ -102,7 +111,21 @@ main {
     color: #3a3a3a;
 }
 
-/*Menu*/
+/*Media query for large or landscape phones*/
+@media screen and(min-width:576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+@media screen and(min-width:768px) {
+    #photos{
+        column-count: 3;
+    }
+} 
+
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -228,6 +251,9 @@ hr {
     #benefits-mental>div {
         text-align: end;
         align-self: flex-end;
+    }
+    #photos{
+        column-count: 4;
     }
 }
 
